@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import CardList from "./CardList";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import PostList from "./PostList";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
+  const queryClient = new QueryClient();
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <QueryClientProvider client={queryClient}>
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <PostList />
+      </QueryClientProvider>
+      {/* <CardList/> */}
     </>
-  )
+  );
 }
-
-export default App
