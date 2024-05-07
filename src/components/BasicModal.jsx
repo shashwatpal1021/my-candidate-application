@@ -32,7 +32,7 @@ export default function BasicModal({ btnName, text }) {
           cursor: "pointer",
           color: "blue",
           zIndex: 22,
-          bottom: -20,
+          bottom: -10,
           fontWeight: "450",
         }}
         onClick={handleOpen}
