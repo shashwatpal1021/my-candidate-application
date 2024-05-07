@@ -1,7 +1,7 @@
 ### Deployed link : https://my-candidate-application.vercel.app/
 
 ## Main Page
-![Main]()
+![Main](./my-application-app.png)
 
 
 ### Run as Development
