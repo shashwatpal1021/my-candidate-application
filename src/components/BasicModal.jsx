@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
@@ -12,7 +12,7 @@ const style = {
   transform: "translate(-50%, -50%)",
   width: 400,
   bgcolor: "background.paper",
-  border: "2px solid #000",
+  border: "2px solid white",
   boxShadow: 24,
   p: 4,
 };
@@ -28,12 +28,12 @@ export default function BasicModal({ btnName, text }) {
         sx={{
           position: "absolute",
           width: "100%",
-          p: 2,
           textAlign: "center",
           cursor: "pointer",
-          color: "black!important",
+          color: "blue",
           zIndex: 22,
-          bottom: -30,
+          bottom: -20,
+          fontWeight: "450",
         }}
         onClick={handleOpen}
       >
@@ -47,6 +47,7 @@ export default function BasicModal({ btnName, text }) {
       >
         <Box sx={style}>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <h1 className="text-xl font-bold underline mb-4 text-center">Job Description</h1>
             {text}
           </Typography>
         </Box>
