@@ -6,14 +6,14 @@
 
 ### Run as Development
 <pre>
-git clone https://github.com/dontcryme/youtube-clone-reactjs-swc-vite-template.git
+git clone https://github.com/shashwatpal1021/my-candidate-application.git
 npm i
 npm run dev
 </pre>
 
 ### Build & Deployment
 <pre>
-git clone https://github.com/dontcryme/youtube-clone-reactjs-swc-vite-template.git
+git clone https://github.com/shashwatpal1021/my-candidate-application.git
 npm i
 npm run build
 </pre>
