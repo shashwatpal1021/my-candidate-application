@@ -15,7 +15,7 @@ export default function FilterTab({ list, onChange, title }) {
         options={list}
         getOptionLabel={(option) => option.value}
         placeholder={title}
-        style={{ minWidth: 150 }}
+        style={{ minWidth: 100 }}
         filterSelectedOptions
         renderInput={(params) => (
           <TextField {...params} label={title} placeholder="Favorites" />
